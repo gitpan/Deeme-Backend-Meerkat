@@ -1,10 +1,10 @@
 package Deeme::Backend::Meerkat;
-use Mojo::Base 'Deeme::Backend';
+use Deeme::Obj 'Deeme::Backend';
 use Meerkat;
 use Deeme::Utils qw(_serialize _deserialize);
 use Carp 'croak';
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 has [qw(database host username password meerkat)];
 
